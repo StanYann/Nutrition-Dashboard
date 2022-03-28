@@ -1,0 +1,110 @@
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+label {
+    color: white;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: auto;
+  }
+
+select {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: auto;
+}
+
+h1 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.result {
+    display: flex;
+    flex-flow: column;
+}
+
+.result_row {
+    display: flex;
+    flex-flow: row;
+}
+
+.result h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.suggestion {
+    float: right;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    max-width: 45vw;
+}
+
+.suggestion p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.table {
+    margin-left: 4vw;
+    margin-bottom: 40px;
+    float: left;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+.table table tbody tr td {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+strong {
+    color: rgb(93,109,207);
+}
+
+.neon {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
