@@ -13,6 +13,11 @@ export default class Dashboard extends Component {
   //   }
   // }
 
+  clearLocalStorage = () => {
+    localStorage.clear();
+    window.location.reload();
+  }
+
   render() {
     const CALORIE = localStorage.Calorie;
     const PROTEIN = localStorage.Protein;
@@ -35,10 +40,41 @@ export default class Dashboard extends Component {
     const FF = Number(recipeF) + Number(pictureF);
     const CC = Number(recipeC) + Number(pictureC);
 
-    const RRR = (Number(RR)/Number(CALORIE))*100;
-    const PPP = (Number(PP)/Number(PROTEIN))*100;
-    const FFF = (Number(FF)/Number(FAT))*100;
-    const CCC = (Number(CC)/Number(CARBOHYDRATE))*100;
+    const RRR = (Number(RR)/Number(CALORIE))*100 || 0;
+    const PPP = (Number(PP)/Number(PROTEIN))*100 || 0;
+    const FFF = (Number(FF)/Number(FAT))*100 || 0;
+    const CCC = (Number(CC)/Number(CARBOHYDRATE))*100 || 0;
+
+    var RRRR = 0;
+    var PPPP = 0;
+    var FFFF = 0;
+    var CCCC = 0;
+
+    if(RR > parseInt(CALORIE)) {
+       RRRR = 100;
+    } else {
+       RRRR = RRR;
+    }
+
+    if(PP > parseInt(PROTEIN)) {
+      PPPP = 100;
+   } else {
+      PPPP = PPP;
+   }
+
+   if(FF > parseInt(FAT)) {
+    FFFF = 100;
+ } else {
+    FFFF = FFF;
+ }
+
+ if(CC > parseInt(CARBOHYDRATE)) {
+  CCCC = 100;
+} else {
+  CCCC = CCC;
+}
+
+
     return (
         <div>
             {/* First Line */}
@@ -46,29 +82,26 @@ export default class Dashboard extends Component {
       <div className="discount card" style={{'--delay': '.4s'}}>
         <div className="title">Nutrition Count(/g)</div>
         <div className="semi-donut margin" 
-        style={{'--percentage' : `${RRR}`, '--fill': '#FF3D00', display: 'inline-flex'}}>
-          {RR.toFixed(0)}/{CALORIE}<br/>
-          Calorie
+        style={{'--percentage' : RRRR, '--fill': (RRRR === 100) ? '#808080' : '#FF3D00', display: 'inline-flex'}}>
+          {RR.toFixed(0)}/{CALORIE || 0}<br/>
+          {(RRRR === 100) ? <div style={{color: 'red', fontSize: 'border'}}>Calorie Full !</div> : 'Calorie'}
         </div>
-        <div className="semi-donut-model-2 margin"
-            style={{'--percentage' : `${PPP}`, '--fill': '#039BE5', display: 'inline-flex'}}>
-            {PP.toFixed(0)}/{PROTEIN}<br/>
-            Protein
+        <div className="semi-donut margin"
+            style={{'--percentage' : PPPP, '--fill': (PPPP === 100) ? '#808080' : '#039BE5', display: 'inline-flex'}}>
+            {PP.toFixed(0)}/{PROTEIN || 0}<br/>
+            {(PPPP === 100) ? <div style={{color: 'red', fontSize: 'border'}}>Protein Full !</div> : 'Protein'}
         </div>
-        <div className="semi-donut-model-2 margin"
-            style={{'--percentage' : `${FFF}`, '--fill': '#f2ce48', display: 'inline-flex'}}>
-            {FF.toFixed(0)}/{FAT}<br/>
-            Fat
+        <div className="semi-donut margin"
+            style={{'--percentage' : FFFF, '--fill': (FFFF === 100) ? '#808080' : '#f2ce48', display: 'inline-flex'}}>
+            {FF.toFixed(0)}/{FAT || 0}<br/>
+            {(FFFF === 100) ? <div style={{color: 'red', fontSize: 'border'}}>Fat Full !</div> : 'Fat'}
         </div>
-        <div className="semi-donut-model-2 margin"
-            style={{'--percentage' : `${CCC}`, '--fill': '#FFA500', display: 'inline-flex'}}>
-            {CC.toFixed(0)}/{CARBOHYDRATE}<br/> 
-            Carbohydrate
+        <div className="semi-donut margin"
+            style={{'--percentage' : CCCC, '--fill': (CCCC === 100) ? '#808080' : '#FFA500', display: 'inline-flex'}}>
+            {CC.toFixed(0)}/{CARBOHYDRATE || 0}<br/> 
+            {(CCCC === 100) ? <div style={{color: 'red', fontSize: 'border'}}>Carbohydrate Full !</div> : 'Carbohydrate'}
         </div>
-        <div className="button offer-button ">{localStorage.untest ? 
-        <h1 className='comment'>Oops! Looks like we dont have your body data yet. 
-                           <br/>So why dont you go have Body Test in 'Body Measure' !</h1> : 
-                           localStorage.lowtrue ? <h2>123</h2> : <h2>123</h2>}</div>
+        <div onClick={this.clearLocalStorage} className="button offer-button " style={{fontSize: '1.2em', fontWeight: 'bolder'}}>Clear Data</div>
       </div> 
       </div>
         {/* Second Line */}

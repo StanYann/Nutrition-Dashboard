@@ -24,7 +24,7 @@ export default function Food({ foodData }) {
         <main>
             <section className="nutrients">
                 <img src={picture} alt="" className='pic' style={{width: '50vw', textAlign:'center'}}/>
-                <h1>This food has <span style={{color: 'Aqua', fontSize: '1.2em'}}>{category.probability}</span> chance of being <span style={{color: 'red', fontSize: '1.5em'}}>{category.name}</span></h1>
+                <h1>This food has <span style={{color: 'Aqua', fontSize: '1.2em'}}>{((category.probability)*100).toFixed(2)}</span> % of being <span style={{color: 'red', fontSize: '1.5em'}}>{category.name}</span></h1>
                 <ul style={{color: 'white'}}>
                     <li>Calories: {calories.value.toFixed(0)} <span style={{color: 'Aqua'}}>{nutrition.calories.unit}</span></li>
                     <li>Carbohydrates: {carbs.value.toFixed(0)} <span style={{color: 'Aqua'}}>{nutrition.carbs.unit}</span></li>
