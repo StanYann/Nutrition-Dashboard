@@ -53,6 +53,7 @@ h1 {
 .result_row {
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
 }
 
 .result h1{

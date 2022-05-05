@@ -70,12 +70,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'male' && daily == 'light-activity') {
       const R = (66+(13*weight)+(5*height)-(6.8*age))*1.375;
       const P = weight*2.2;
@@ -85,12 +79,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'male' && daily == 'moderate-activity') {
       const R = (66+(13*weight)+(5*height)-(6.8*age))*1.55;
       const P = weight*2.2;
@@ -100,12 +88,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'male' && daily == 'very-active') {
       const R = (66+(13*weight)+(5*height)-(6.8*age))*1.725;
       const P = weight*2.2;
@@ -115,12 +97,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'male' && daily == 'hyperactive') {
       const R = (66+(13*weight)+(5*height)-(6.8*age))*1.9;
       const P = weight*2.2;
@@ -130,12 +106,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'female' && daily == 'basically-sitting-all-the-time') {
       const R = (665+(9.6*weight)+(1.8*height)-(4.7*age))*1.2;
       const P = weight*2.2;
@@ -145,12 +115,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'female' && daily == 'light-activity') {
       const R = (665+(9.6*weight)+(1.8*height)-(4.7*age))*1.375;
       const P = weight*2.2;
@@ -160,12 +124,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'female' && daily == 'moderate-activity') {
       const R = (665+(9.6*weight)+(1.8*height)-(4.7*age))*1.55;
       const P = weight*2.2;
@@ -175,12 +133,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'female' && daily == 'very-active') {
       const R = (665+(9.6*weight)+(1.8*height)-(4.7*age))*1.725;
       const P = weight*2.2;
@@ -190,12 +142,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     } else if(gender == 'female' && daily == 'hyperactive') {
       const R = (665+(9.6*weight)+(1.8*height)-(4.7*age))*1.9;
       const P = weight*2.2;
@@ -205,12 +151,6 @@ export default class BodyMeasure extends Component {
       localStorage.Protein = P.toFixed(0);
       localStorage.Fat = F.toFixed(0);
       localStorage.Carbohydrate = C.toFixed(0);
-      alert(`Your need 
-              Calorie:        ${R.toFixed(0)} calories
-              Protein:        ${P.toFixed(0)} g
-              Fat:            ${F.toFixed(0)} g
-              Carbohydrate:   ${C.toFixed(0)} g
-          For daily need`);
     }
 
     const BMI = Number(weight)/Math.pow((Number(height)/100),2);

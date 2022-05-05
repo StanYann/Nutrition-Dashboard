@@ -81,6 +81,7 @@ export default class Dashboard extends Component {
       <div className="user-box first-box">
       <div className="discount card" style={{'--delay': '.4s'}}>
         <div className="title">Nutrition Count(/g)</div>
+        <div className="dashboards">
         <div className="semi-donut margin" 
         style={{'--percentage' : RRRR, '--fill': (RRRR === 100) ? '#808080' : '#FF3D00', display: 'inline-flex'}}>
           {RR.toFixed(0)}/{CALORIE || 0}<br/>
@@ -100,6 +101,7 @@ export default class Dashboard extends Component {
             style={{'--percentage' : CCCC, '--fill': (CCCC === 100) ? '#808080' : '#FFA500', display: 'inline-flex'}}>
             {CC.toFixed(0)}/{CARBOHYDRATE || 0}<br/> 
             {(CCCC === 100) ? <div style={{color: 'red', fontSize: 'border'}}>Carbohydrate Full !</div> : 'Carbohydrate'}
+        </div>
         </div>
         <div onClick={this.clearLocalStorage} className="button offer-button " style={{fontSize: '1.2em', fontWeight: 'bolder'}}>Clear Data</div>
       </div> 

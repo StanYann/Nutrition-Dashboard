@@ -1138,3 +1138,10 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
+
+.dashboards {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
