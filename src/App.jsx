@@ -68,14 +68,3 @@ export default class App extends Component {
 }
 }
 
-
-
-
-
-
-// Stan here
-// Kelvin has been here!
-// faaew
-// efdewrfrawe
-// Kelvin has been here!
-// fdeas
